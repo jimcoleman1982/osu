@@ -655,6 +655,31 @@ blockquote cite {
   z-index: 1;
 }
 
+/* ---------- Photo / image ---------- */
+.photo {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  max-width: 100%;
+  height: auto;
+}
+
+.photo-portrait {
+  max-width: 320px;
+  width: 100%;
+}
+
+.photo-caption {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.section-dark .photo-caption {
+  color: rgba(255,255,255,0.5);
+}
+
 /* ---------- Table wrapper (mobile scroll) ---------- */
 .table-wrap {
   overflow-x: auto;
