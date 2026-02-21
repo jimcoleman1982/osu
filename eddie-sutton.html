@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eddie Sutton — Doug Coleman's OSU Time Capsule</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .bio-header {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+    }
+    .bio-avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--osu-orange), var(--osu-orange-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+      flex-shrink: 0;
+      color: #fff;
+      border: 4px solid var(--osu-black);
+    }
+    .bio-info h3 { margin-bottom: 0.25rem; }
+    .bio-info .bio-subtitle {
+      font-family: 'Oswald', sans-serif;
+      color: var(--osu-orange);
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .bio-info .bio-dates {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-top: 0.25rem;
+    }
+    @media (max-width: 600px) {
+      .bio-header { flex-direction: column; align-items: center; text-align: center; }
+    }
+    .career-stop {
+      background: #fff;
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      border-left: 5px solid var(--osu-orange);
+      margin-bottom: 1.25rem;
+    }
+    .career-stop h4 { margin-bottom: 0.15rem; }
+    .career-stop .stop-years {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.85rem;
+      color: var(--osu-orange);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.5rem;
+    }
+    .career-stop .stop-record {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--osu-black);
+    }
+    .final-four-box {
+      background: linear-gradient(135deg, #1a1008, var(--osu-black));
+      border: 2px solid var(--osu-orange);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      color: #fff;
+      margin: 1.5rem 0;
+    }
+    .final-four-box h4 { color: var(--osu-orange); margin-bottom: 0.5rem; }
+    .final-four-box p { color: rgba(255,255,255,0.85); }
+    .roster-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0.75rem;
+      margin: 1rem 0;
+    }
+    .roster-item {
+      background: rgba(254,92,0,0.08);
+      border-radius: var(--radius-sm);
+      padding: 0.75rem 1rem;
+    }
+    .roster-item strong { color: var(--osu-black); }
+    .roster-item span { font-size: 0.85rem; color: var(--text-secondary); display: block; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Doug's OSU Time Capsule</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="basketball.html">Basketball</a></li>
+        <li><a href="hank-iba.html">Hank Iba</a></li>
+        <li><a href="eddie-sutton.html">Eddie Sutton</a></li>
+        <li><a href="football.html">Football</a></li>
+        <li><a href="stillwater.html">Stillwater</a></li>
+        <li><a href="world-events.html">World Events</a></li>
+        <li><a href="pop-culture.html">Pop Culture</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <p class="pre-title">The Prodigal Son</p>
+      <h1>Eddie <span class="orange">Sutton</span></h1>
+      <p class="subtitle">He played under Iba. He came home. He changed everything.</p>
+    </div>
+  </header>
+
+  <!-- ========== THE MAN ========== -->
+  <section class="section">
+    <div class="bio-header">
+      <div class="bio-avatar">&#128293;</div>
+      <div class="bio-info">
+        <h3>Edward Eugene Sutton</h3>
+        <p class="bio-subtitle">The Prodigal Son</p>
+        <p class="bio-dates">March 12, 1936 &mdash; May 23, 2020 &bull; Bucklin, Kansas</p>
+        <p>
+          Eddie Sutton was born in the tiny town of Bucklin, Kansas &mdash; 130 miles west of Wichita.
+          His father worked as a mechanic, electrician, and plumber. He enrolled at Oklahoma A&amp;M
+          and played guard under the legendary Hank Iba from 1955 to 1958. He called Iba his
+          "second father." Then he spent the next four decades becoming one of the most successful
+          coaches in college basketball history &mdash; 806 wins, four schools in the NCAA Tournament,
+          and the Naismith Basketball Hall of Fame.
+        </p>
+      </div>
+    </div>
+
+    <blockquote>
+      "Always have faith in God, Yourself and the Cowboys."
+      <cite>&mdash; Eddie Sutton</cite>
+    </blockquote>
+  </section>
+
+  <!-- ========== THE JOURNEY ========== -->
+  <div class="section-dark">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>Building a Coaching Career</h2>
+        <p class="section-subtitle">From Bucklin to Stillwater &mdash; and everywhere in between</p>
+      </div>
+
+      <p style="color: rgba(255,255,255,0.8); margin-bottom: 1.5rem;">
+        After playing for Iba and serving as his graduate assistant in 1958&ndash;59, Sutton set out
+        on a coaching journey that would span nearly four decades and five programs before he came home.
+      </p>
+
+      <div class="career-stop" style="background: #222; border-color: var(--osu-orange);">
+        <h4 style="color: #fff;">Tulsa Central High School</h4>
+        <div class="stop-years">1959&ndash;1966</div>
+        <div class="stop-record" style="color: var(--osu-orange);">119&ndash;51</div>
+        <p style="color: rgba(255,255,255,0.75);">
+          Four state tournament appearances. Named Coach of the Year at city, conference, state, and national levels.
+          The Iba defensive system worked at every level.
+        </p>
+      </div>
+
+      <div class="career-stop" style="background: #222; border-color: var(--osu-orange);">
+        <h4 style="color: #fff;">College of Southern Idaho</h4>
+        <div class="stop-years">1966&ndash;1969</div>
+        <div class="stop-record" style="color: var(--osu-orange);">83&ndash;14</div>
+        <p style="color: rgba(255,255,255,0.75);">
+          Sutton became the school's first-ever head basketball coach. In three seasons, he won 83 games
+          and lost just 14.
+        </p>
+      </div>
+
+      <div class="career-stop" style="background: #222; border-color: var(--osu-orange);">
+        <h4 style="color: #fff;">Creighton University</h4>
+        <div class="stop-years">1969&ndash;1974</div>
+        <div class="stop-record" style="color: var(--osu-orange);">Five consecutive winning seasons</div>
+        <p style="color: rgba(255,255,255,0.75);">
+          Inherited a program with three straight losing seasons and immediately turned it around.
+          Culminated in a 23&ndash;7 season and NCAA Tournament appearance in 1973&ndash;74.
+        </p>
+      </div>
+
+      <div class="career-stop" style="background: #222; border-color: var(--osu-orange);">
+        <h4 style="color: #fff;">University of Arkansas</h4>
+        <div class="stop-years">1974&ndash;1985</div>
+        <div class="stop-record" style="color: var(--osu-orange);">260&ndash;75 (.776)</div>
+        <p style="color: rgba(255,255,255,0.75);">
+          Eleven seasons of dominance. Five Southwest Conference championships. Nine NCAA Tournament
+          appearances. <strong>1978 Final Four</strong> with "The Triplets" &mdash; Ron Brewer,
+          Marvin Delph, and Sidney Moncrief. His .776 winning percentage remains the highest in
+          SWC history.
+        </p>
+      </div>
+
+      <div class="career-stop" style="background: #222; border-color: var(--osu-orange);">
+        <h4 style="color: #fff;">University of Kentucky</h4>
+        <div class="stop-years">1985&ndash;1989</div>
+        <div class="stop-record" style="color: var(--osu-orange);">88&ndash;39</div>
+        <p style="color: rgba(255,255,255,0.75);">
+          32&ndash;4 his first season, named National Coach of the Year. But the tenure ended after
+          four seasons following recruiting violations and sanctions. Sutton and his entire staff
+          were forced to resign.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== COMING HOME ========== -->
+  <section class="section">
+    <div class="section-header">
+      <h2>Coming Home: The OSU Transformation</h2>
+      <p class="section-subtitle">1990&ndash;2006 &mdash; From afterthought to powerhouse</p>
+    </div>
+
+    <p>
+      On April 11, 1990, Eddie Sutton returned to his alma mater. The program he inherited was in ruins:
+      <strong>one NCAA Tournament appearance in 25 years</strong>. Only seven winning seasons in that same
+      stretch. Oklahoma State basketball was an afterthought.
+    </p>
+    <p>
+      Sutton changed that immediately.
+    </p>
+
+    <div class="stats-row mt-3">
+      <div class="stat-item">
+        <div class="stat-number">368</div>
+        <div class="stat-label">Wins at OSU</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">151</div>
+        <div class="stat-label">Losses</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">13</div>
+        <div class="stat-label">NCAA Tournaments</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">2</div>
+        <div class="stat-label">Final Fours</div>
+      </div>
+    </div>
+
+    <div class="content-block mt-3">
+      <h4>Year One: Instant Impact</h4>
+      <p>
+        In Sutton's first season (1990&ndash;91), the Cowboys went <strong>24&ndash;8</strong>, won the
+        Big 8 regular season championship, and advanced to the NCAA's Sweet 16. Henry Iba &mdash;
+        watching from Stillwater &mdash; couldn't have been happier.
+      </p>
+
+      <h4>The Three D's</h4>
+      <p>
+        Sutton's core principles were printed on the players' practice jerseys and shorts:
+        <strong>Discipline, Dedication, and Defense</strong>. His teams excelled through a disciplined,
+        defense-oriented style emphasizing rebounding and quick transition play, pressing to force
+        turnovers and capitalize on fast breaks.
+      </p>
+      <p>
+        As assistant Charlie Spoonhour described it: "The deal was not just guarding your man,
+        it was denial of passes, playing the passing lanes. It was perfected by the inch."
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== 1995 FINAL FOUR ========== -->
+  <div class="section-dark">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>1995 Final Four</h2>
+        <p class="section-subtitle">Big Country, the broken backboard, and a return to the national stage</p>
+      </div>
+
+      <p style="color: rgba(255,255,255,0.8);">
+        In Sutton's fifth season, the Cowboys rode the power of 7-foot center <strong>Bryant "Big Country"
+        Reeves</strong> and sharpshooter Randy Rutherford to the school's first Final Four since 1951.
+      </p>
+
+      <div class="final-four-box">
+        <h4>The Backboard Moment</h4>
+        <p>
+          During Final Four practice in Seattle on March 31, 1995, Big Country Reeves threw down a dunk
+          that <strong>shattered the Kingdome backboard</strong>. Glass everywhere. The entire country saw it.
+          After that, everyone knew who Bryant Reeves was.
+        </p>
+      </div>
+
+      <p style="color: rgba(255,255,255,0.8);">
+        Oklahoma State advanced by beating #2 seed Massachusetts 68&ndash;54 in the East Region final.
+        Reeves played all 40 minutes, posting 24 points and 10 rebounds, and was named the regional's
+        most outstanding player.
+      </p>
+      <p style="color: rgba(255,255,255,0.8);">
+        The Cowboys lost 74&ndash;61 to eventual national champion UCLA on April 1, 1995. But the
+        statement had been made: Oklahoma State basketball was back.
+      </p>
+    </div>
+  </div>
+
+  <!-- ========== 2004 FINAL FOUR ========== -->
+  <section class="section">
+    <div class="section-header">
+      <h2>2004 Final Four</h2>
+      <p class="section-subtitle">The one Doug remembers &mdash; March 27, 2004</p>
+    </div>
+
+    <p style="font-size: 1.1rem; color: var(--osu-orange-dark); font-weight: 600;">
+      Doug, you mentioned this one by name. March 27, 2004. Here's what happened.
+    </p>
+
+    <div class="content-block">
+      <p>
+        The 2003&ndash;04 Cowboys were Sutton's masterpiece: a <strong>31&ndash;4</strong> team that
+        tied the school record for wins and swept the Big 12 regular season and tournament titles.
+        The roster was built on an unlikely collection of transfers &mdash; five from other four-year
+        schools, two from junior colleges &mdash; who came together into something special.
+      </p>
+    </div>
+
+    <h3>The Roster</h3>
+    <div class="roster-grid">
+      <div class="roster-item">
+        <strong>Tony Allen</strong>
+        <span>JC transfer. Leading scorer. Future 6x NBA All-Defensive player. Kobe Bryant's toughest defender.</span>
+      </div>
+      <div class="roster-item">
+        <strong>John Lucas III</strong>
+        <span>Floor general. Alongside Allen, led the backcourt.</span>
+      </div>
+      <div class="roster-item">
+        <strong>Joey Graham</strong>
+        <span>Key contributor. Future NBA Draft pick.</span>
+      </div>
+      <div class="roster-item">
+        <strong>Stevie Graham</strong>
+        <span>Joey's brother. Transfer from Central Florida.</span>
+      </div>
+      <div class="roster-item">
+        <strong>Daniel Bobik</strong>
+        <span>Transfer from BYU.</span>
+      </div>
+      <div class="roster-item">
+        <strong>Ivan McFarlin</strong>
+        <span>Power forward. 25th overall pick in 2004 NBA Draft.</span>
+      </div>
+    </div>
+
+    <div class="final-four-box" style="background: linear-gradient(135deg, #1a1008, var(--osu-black));">
+      <h4>The Road to San Antonio</h4>
+      <p>
+        On <strong>March 27, 2004</strong>, Oklahoma State defeated St. Joseph's in the Elite Eight
+        to punch their ticket to the Final Four at the Alamodome in San Antonio.
+      </p>
+      <p>
+        In the national semifinal, the Cowboys faced Georgia Tech. It came down to the wire &mdash;
+        <strong>Georgia Tech 67, Oklahoma State 65</strong>. Two points from the championship game.
+      </p>
+      <p style="margin-bottom: 0; font-weight: 600; color: var(--osu-orange);">
+        It remains the last time Oklahoma State has been to a Final Four.
+      </p>
+    </div>
+
+    <div class="stats-row mt-3">
+      <div class="stat-item">
+        <div class="stat-number">31-4</div>
+        <div class="stat-label">Season Record</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">67-65</div>
+        <div class="stat-label">Final Four Loss</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">2</div>
+        <div class="stat-label">Points from the Title Game</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LEGACY & PASSING ========== -->
+  <div class="section-dark">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>His Legacy</h2>
+        <p class="section-subtitle">806 wins, the Hall of Fame, and a court that bears his name</p>
+      </div>
+
+      <div class="content-block">
+        <h3 style="color: var(--osu-orange);">Eddie Sutton Court</h3>
+        <p style="color: rgba(255,255,255,0.8);">
+          On <strong>January 15, 2005</strong>, the court at Gallagher-Iba Arena was officially renamed
+          <strong>Eddie Sutton Court</strong>. The floor where Hank Iba built a dynasty now carries the
+          name of the student who came back and built another one.
+        </p>
+      </div>
+
+      <div class="content-block">
+        <h3 style="color: var(--osu-orange);">By The Numbers</h3>
+        <div class="stats-row">
+          <div class="stat-item">
+            <div class="stat-number">806</div>
+            <div class="stat-label">Career Wins</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">37</div>
+            <div class="stat-label">D-I Seasons</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">4</div>
+            <div class="stat-label">Schools in NCAA Tournament</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Final Fours</div>
+          </div>
+        </div>
+        <p style="color: rgba(255,255,255,0.7); text-align: center; margin-top: 1rem;">
+          The first coach in history to lead four different Division I programs to the NCAA Tournament:
+          Creighton, Arkansas, Kentucky, and Oklahoma State.
+        </p>
+      </div>
+
+      <div class="content-block">
+        <h3 style="color: var(--osu-orange);">Hall of Fame: Class of 2020</h3>
+        <p style="color: rgba(255,255,255,0.8);">
+          After being a finalist seven times since 2002, Eddie Sutton was finally elected to the
+          <strong>Naismith Memorial Basketball Hall of Fame</strong> on April 4, 2020. The announcement
+          came on ESPN. He was 84 years old.
+        </p>
+        <p style="color: rgba(255,255,255,0.8);">
+          He was inducted alongside Kobe Bryant, Tim Duncan, Kevin Garnett, and Tamika Catchings &mdash;
+          one of the greatest classes in Hall of Fame history.
+        </p>
+      </div>
+
+      <div class="content-block">
+        <h3 style="color: var(--osu-orange);">May 23, 2020</h3>
+        <p style="color: rgba(255,255,255,0.8);">
+          Eddie Sutton died of natural causes on May 23, 2020, at age 84. He was surrounded by family.
+          Former players and close friends had visited in the days before his passing.
+        </p>
+        <p style="color: rgba(255,255,255,0.8);">
+          He died less than two months after learning he would be inducted into the Hall of Fame. He was
+          enshrined posthumously alongside Kobe Bryant on August 29, 2020.
+        </p>
+
+        <blockquote>
+          "Leadership, like coaching, is fighting for the hearts and souls of men and getting them
+          to believe in you."
+          <cite>&mdash; Eddie Sutton</cite>
+        </blockquote>
+
+        <p style="color: rgba(255,255,255,0.7);">
+          Tony Allen, who played on the 2004 Final Four team, credited Sutton with molding him into
+          an NBA champion and the toughest defender Kobe Bryant ever faced.
+        </p>
+        <p style="color: rgba(255,255,255,0.7);">
+          Oklahoma State president Burns Hargis said: "He revived our historic basketball program and
+          will always be revered and loved by the Cowboy family."
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== CONTINUE ========== -->
+  <section class="section text-center">
+    <h2>Keep Exploring</h2>
+    <p style="max-width: 600px; margin: 0.5rem auto 1.5rem; color: var(--text-secondary);">
+      The basketball story connects to everything else about Doug's years at OSU.
+    </p>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="hank-iba.html" class="cta-btn cta-btn-outline" style="display: inline-block; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.85rem 2rem; border-radius: var(--radius-sm);">&larr; Hank Iba</a>
+      <a href="basketball.html" class="cta-btn cta-btn-outline" style="display: inline-block; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.85rem 2rem; border-radius: var(--radius-sm);">Basketball Home</a>
+      <a href="football.html" class="cta-btn cta-btn-primary" style="display: inline-block; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.85rem 2rem; border-radius: var(--radius-sm);">Football &rarr;</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>
+      Built with <span class="footer-heart">&hearts;</span> for <strong>Doug Coleman</strong>
+      &mdash; Proud Oklahoma State Cowboy, Class of 1988
+    </p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem;">
+      Go Pokes. &bull; America's Brightest Orange &bull; Stillwater, Oklahoma
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cowboys Basketball — Doug Coleman's OSU Time Capsule</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .arena-box {
+      background: linear-gradient(135deg, #1a1008 0%, var(--osu-black) 100%);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      margin: 1.5rem 0;
+      color: var(--text-light);
+      border: 1px solid #333;
+    }
+    .arena-box h4 { color: var(--osu-orange); }
+    .arena-box p { color: rgba(255,255,255,0.8); }
+    .coach-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    @media (max-width: 600px) { .coach-cards { grid-template-columns: 1fr; } }
+    .coach-card {
+      background: #fff;
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      border-left: 5px solid var(--osu-orange);
+      box-shadow: var(--shadow-sm);
+    }
+    .coach-card h4 { color: var(--osu-black); margin-bottom: 0.25rem; }
+    .coach-card .coach-years {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.85rem;
+      color: var(--osu-orange);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.75rem;
+    }
+    .legend-callout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    @media (max-width: 600px) { .legend-callout { grid-template-columns: 1fr; } }
+    .legend-card {
+      background: linear-gradient(135deg, var(--osu-black) 0%, #2a1a08 100%);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      color: #fff;
+      text-align: center;
+      border: 2px solid var(--osu-orange);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .legend-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(254,92,0,0.25);
+    }
+    .legend-card h3 { color: var(--osu-orange); margin-bottom: 0.25rem; }
+    .legend-card .legend-subtitle {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    .legend-card p { color: rgba(255,255,255,0.8); font-size: 0.95rem; }
+    .legend-card .card-cta {
+      display: inline-block;
+      margin-top: 1rem;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      color: var(--osu-orange);
+      letter-spacing: 0.05em;
+    }
+    .legend-card .card-cta::after { content: ' \2192'; }
+    .player-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .player-card {
+      background: #fff;
+      border-radius: var(--radius-sm);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-sm);
+      border-top: 3px solid var(--osu-orange);
+    }
+    .player-card h4 { font-size: 1.05rem; margin-bottom: 0.15rem; }
+    .player-card .player-years {
+      font-size: 0.8rem;
+      color: var(--osu-orange);
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.5rem;
+    }
+    .player-card p { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Doug's OSU Time Capsule</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="basketball.html">Basketball</a></li>
+        <li><a href="hank-iba.html">Hank Iba</a></li>
+        <li><a href="eddie-sutton.html">Eddie Sutton</a></li>
+        <li><a href="football.html">Football</a></li>
+        <li><a href="stillwater.html">Stillwater</a></li>
+        <li><a href="world-events.html">World Events</a></li>
+        <li><a href="pop-culture.html">Pop Culture</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <p class="pre-title">Doug's Favorite Sport</p>
+      <h1>Cowboys <span class="orange">Basketball</span></h1>
+      <p class="subtitle">The House of Horrors &mdash; Gallagher-Iba Arena, 1982&ndash;1988</p>
+    </div>
+  </header>
+
+  <!-- ========== GALLAGHER-IBA ARENA ========== -->
+  <section class="section">
+    <div class="section-header">
+      <h2>Gallagher-Iba Arena</h2>
+      <p class="section-subtitle">The House of Horrors &mdash; where visiting teams came to suffer</p>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <p>
+          If you watched Cowboys basketball in the 1980s, you experienced something most arenas couldn't replicate.
+          Gallagher-Iba Arena was a pressure cooker &mdash; literally. Until the 1987 renovation, the building
+          had <strong>no air conditioning</strong>. The heat from thousands of fans packed into steep, 34-degree-angle
+          seating created a suffocating wall of orange that terrorized visiting teams for decades.
+        </p>
+        <p>
+          The arena earned its fearsome nickname during the Henry Iba era, when the combination of stifling defense
+          on the court and stifling conditions in the stands made it one of the most hostile environments in college
+          basketball. Opponents didn't just lose games there &mdash; they wilted.
+        </p>
+        <p>
+          In <strong>1987</strong>, the building underwent a major renovation. Air conditioning was finally installed,
+          and the arena was officially renamed <strong>Gallagher-Iba Arena</strong> &mdash; honoring both wrestling
+          coach Ed Gallagher and the legendary Hank Iba. Doug, you were there when that happened.
+        </p>
+      </div>
+      <div>
+        <div class="arena-box">
+          <h4>Arena Fast Facts</h4>
+          <p><strong>Opened:</strong> 1938</p>
+          <p><strong>Renamed:</strong> 1987 (while Doug was a student)</p>
+          <p><strong>Named for:</strong> Ed Gallagher (wrestling) &amp; Henry Iba (basketball)</p>
+          <p><strong>Seating angle:</strong> 34 degrees &mdash; one of the steepest in college basketball</p>
+          <p><strong>The floor:</strong> Original white maple &mdash; the oldest basketball court still in use</p>
+          <p><strong>Court name:</strong> Eddie Sutton Court (dedicated 2005)</p>
+          <p><strong>Nickname:</strong> "The House of Horrors"</p>
+          <p class="mb-0"><strong>No AC until:</strong> 1987 renovation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== THE LEGENDS: IBA & SUTTON ========== -->
+  <div class="section-dark">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>The Coaching Legends</h2>
+        <p class="section-subtitle">The two men who defined Oklahoma State basketball &mdash; and one learned from the other</p>
+      </div>
+
+      <p style="color: rgba(255,255,255,0.8); max-width: 700px; margin-bottom: 1.5rem;">
+        Doug, you mentioned both of these coaches by name. Henry Iba built the foundation. Eddie Sutton
+        played under Iba as a student, then came back decades later to resurrect the program. Their story
+        is the story of Oklahoma State basketball. Each has a dedicated page on this site.
+      </p>
+
+      <div class="legend-callout">
+        <a href="hank-iba.html" class="card-link">
+          <div class="legend-card">
+            <h3>Henry "Hank" Iba</h3>
+            <p class="legend-subtitle">The Iron Duke of Defense</p>
+            <p>
+              36 years at OSU. Back-to-back NCAA championships. Three Olympic teams.
+              The 1972 gold medal game that still haunts American basketball.
+              751 career wins. The arena bears his name.
+            </p>
+            <span class="card-cta">Read the full story</span>
+          </div>
+        </a>
+        <a href="eddie-sutton.html" class="card-link">
+          <div class="legend-card">
+            <h3>Eddie Sutton</h3>
+            <p class="legend-subtitle">The Prodigal Son</p>
+            <p>
+              Played guard under Iba. Came home in 1990 to a program with 1 NCAA appearance in 25 years.
+              Built it into a powerhouse. Two Final Fours. 806 career wins.
+              Hall of Fame, Class of 2020.
+            </p>
+            <span class="card-cta">Read the full story</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== DOUG'S ERA: SEASON BY SEASON ========== -->
+  <section class="section">
+    <div class="section-header">
+      <h2>Doug's Era: Season by Season</h2>
+      <p class="section-subtitle">Cowboys basketball during your years in Stillwater, 1982&ndash;1988</p>
+    </div>
+
+    <table class="season-table">
+      <thead>
+        <tr>
+          <th>Season</th>
+          <th>Record</th>
+          <th>Big 8</th>
+          <th>Coach</th>
+          <th>Highlight</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1981&ndash;82</td>
+          <td>15&ndash;12</td>
+          <td>7&ndash;7 (5th)</td>
+          <td>Paul Hansen</td>
+          <td>Doug's freshman year</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>1982&ndash;83</td>
+          <td><strong>24&ndash;7</strong></td>
+          <td>9&ndash;5 (T-3rd)</td>
+          <td>Paul Hansen</td>
+          <td>Big 8 Tourney champs &bull; NCAA Tournament</td>
+        </tr>
+        <tr>
+          <td>1983&ndash;84</td>
+          <td>13&ndash;15</td>
+          <td>&mdash;</td>
+          <td>Paul Hansen</td>
+          <td>Rebuilding year</td>
+        </tr>
+        <tr>
+          <td>1984&ndash;85</td>
+          <td>12&ndash;16</td>
+          <td>3&ndash;11 (8th)</td>
+          <td>Paul Hansen</td>
+          <td>Tough season in a loaded conference</td>
+        </tr>
+        <tr>
+          <td>1985&ndash;86</td>
+          <td>15&ndash;13</td>
+          <td>6&ndash;8 (6th)</td>
+          <td>Paul Hansen</td>
+          <td>Hansen's final season</td>
+        </tr>
+        <tr>
+          <td>1986&ndash;87</td>
+          <td>8&ndash;20</td>
+          <td>4&ndash;10 (7th)</td>
+          <td>Leonard Hamilton</td>
+          <td>Historic hire: first Black head coach in Big 8</td>
+        </tr>
+        <tr>
+          <td>1987&ndash;88</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td>Leonard Hamilton</td>
+          <td>John Starks arrives (15.4 ppg)</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ========== THE BREAKTHROUGH: 1982-83 ========== -->
+  <div class="section-dark">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>The Breakthrough: 1982&ndash;83</h2>
+        <p class="section-subtitle">Doug's sophomore year &mdash; the best season in a generation</p>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <p style="color: rgba(255,255,255,0.8);">
+            The 1982&ndash;83 Cowboys were special. Under coach Paul Hansen, Oklahoma State went
+            <strong>24&ndash;7</strong> &mdash; Hansen's best season and one of the program's finest in decades.
+          </p>
+          <p style="color: rgba(255,255,255,0.8);">
+            The signature moment came in the <strong>Big 8 Conference Tournament championship</strong>,
+            where the Cowboys defeated Missouri in <strong>double overtime</strong>. That victory earned OSU
+            the automatic bid to the NCAA Tournament &mdash; their <strong>first appearance since 1965</strong>,
+            ending an 18-year drought.
+          </p>
+          <p style="color: rgba(255,255,255,0.8);">
+            The tournament run ended in heartbreak: a first-round upset loss to #12 Princeton, 56&ndash;53,
+            at Gill Coliseum in Corvallis, Oregon. But making it there at all was a statement &mdash; Oklahoma State
+            basketball was alive again.
+          </p>
+        </div>
+        <div>
+          <div class="stats-row">
+            <div class="stat-item">
+              <div class="stat-number">24-7</div>
+              <div class="stat-label">Season Record</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">18</div>
+              <div class="stat-label">Year NCAA Drought Ended</div>
+            </div>
+          </div>
+          <blockquote>
+            The Big 8 Tournament championship in double overtime against Missouri was the kind of game
+            that makes lifelong fans. For Doug, a sophomore that season, it was proof that being a
+            Cowboys basketball fan meant something.
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== THE COACHES DOUG WATCHED ========== -->
+  <section class="section">
+    <div class="section-header">
+      <h2>The Coaches Doug Watched</h2>
+      <p class="section-subtitle">Two very different eras during your time in Stillwater</p>
+    </div>
+
+    <div class="coach-cards">
+      <div class="coach-card">
+        <h4>Paul Hansen</h4>
+        <div class="coach-years">Head Coach 1979&ndash;1986</div>
+        <p>
+          Hansen coached at OSU for seven seasons, compiling a 107&ndash;89 record. His crowning achievement
+          was the 1982&ndash;83 season: a 24&ndash;7 record, Big 8 Tournament championship, and the school's
+          first NCAA Tournament appearance in 18 years. He was named Big 8 Coach of the Year in 1980&ndash;81.
+        </p>
+        <p>
+          After several inconsistent seasons following the '83 breakthrough, Hansen's contract was not renewed
+          after the 1985&ndash;86 season.
+        </p>
+      </div>
+      <div class="coach-card">
+        <h4>Leonard Hamilton</h4>
+        <div class="coach-years">Head Coach 1986&ndash;1990</div>
+        <p>
+          Hamilton's hiring was historic: he became the <strong>first African-American head coach
+          in Big 8 Conference history</strong>. He came from Kentucky, where he had served as associate
+          head coach under Eddie Sutton.
+        </p>
+        <p>
+          The early years were a rebuild &mdash; his first team went 8&ndash;20. But Hamilton was laying
+          groundwork, and his tenure saw the arrival of future NBA players like John Starks and Byron Houston.
+          He compiled a 56&ndash;63 record before leaving for Miami.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PLAYERS TO REMEMBER ========== -->
+  <div class="section-dark">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>Players to Remember</h2>
+        <p class="section-subtitle">Cowboys who wore orange during Doug's years &mdash; and what they became</p>
+      </div>
+
+      <div class="player-grid">
+        <div class="player-card">
+          <h4>John Starks</h4>
+          <div class="player-years">1987&ndash;88</div>
+          <p>
+            Played just one season at OSU, averaging 15.4 points per game in 30 games.
+            Went on to become a New York Knicks legend &mdash; one of the most beloved players in
+            franchise history. Doug, he was on your campus.
+          </p>
+        </div>
+        <div class="player-card">
+          <h4>Byron Houston</h4>
+          <div class="player-years">1988&ndash;1992</div>
+          <p>
+            Signed with OSU in 1988, arriving at the tail end of Doug's time. Became Oklahoma State's
+            all-time leading scorer, averaging 18.6 points and 9.4 rebounds across 127 games.
+            Three-time First Team All-Big Eight.
+          </p>
+        </div>
+        <div class="player-card">
+          <h4>The 1982&ndash;83 Team</h4>
+          <div class="player-years">Big 8 Tournament Champions</div>
+          <p>
+            The squad that ended the 18-year NCAA Tournament drought. Won the Big 8 Tournament
+            in double overtime against Missouri. A team that gave Doug &mdash; and every OSU fan &mdash;
+            something to believe in again.
+          </p>
+        </div>
+        <div class="player-card">
+          <h4>Royce Jeffries</h4>
+          <div class="player-years">1986&ndash;1990</div>
+          <p>
+            A 6'6" forward known for rugged play in the paint. Averaged 13.1 points per game as a senior.
+            Played alongside both Starks and Houston during the Hamilton era.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== BEDLAM & BIG 8 ========== -->
+  <section class="section">
+    <div class="section-header">
+      <h2>Bedlam on the Court</h2>
+      <p class="section-subtitle">The rivalry with Oklahoma &amp; life in the Big 8</p>
+    </div>
+
+    <div class="content-block">
+      <h3>The OU Rivalry</h3>
+      <p>
+        Oklahoma dominated the Big 8 in basketball during the mid-1980s, winning regular season titles
+        in both 1984 and 1985 with 13&ndash;1 conference records. The Sooners reached the national
+        championship game in 1988, falling to Kansas. The Bedlam basketball series was intense but
+        tilted heavily toward OU &mdash; a reality that made every upset attempt electric inside
+        Gallagher-Iba Arena.
+      </p>
+      <p>
+        The overall series history stretches back to 1908, with Oklahoma holding the all-time lead
+        at 136&ndash;106. But in the House of Horrors, anything could happen.
+      </p>
+    </div>
+
+    <div class="content-block">
+      <h3>The Big 8 Landscape</h3>
+      <p>
+        During Doug's years, the Big 8 Conference was a basketball gauntlet. Oklahoma and Kansas were
+        the powers, but Missouri, Iowa State, and Nebraska all had their moments. Oklahoma State's best
+        conference finish during this stretch was the 1982&ndash;83 season, when they went 9&ndash;5 and
+        finished tied for third.
+      </p>
+      <p>
+        The conference would evolve into the Big 12 in 1996, adding four Texas schools. But during Doug's
+        time, it was the Big 8 &mdash; eight schools, round-robin scheduling, and Saturday afternoons
+        that meant everything.
+      </p>
+
+      <h4>Big 8 Conference Champions During Doug's Years</h4>
+      <table class="season-table" style="max-width: 500px;">
+        <thead>
+          <tr><th>Year</th><th>Champion</th><th>Record</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1982</td><td>Missouri</td><td>12&ndash;2</td></tr>
+          <tr><td>1983</td><td>Missouri</td><td>12&ndash;2</td></tr>
+          <tr><td>1984</td><td>Oklahoma</td><td>13&ndash;1</td></tr>
+          <tr><td>1985</td><td>Oklahoma</td><td>13&ndash;1</td></tr>
+          <tr><td>1986</td><td>Kansas</td><td>13&ndash;1</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ========== LOOKING AHEAD ========== -->
+  <div class="section-orange">
+    <div class="section-inner text-center">
+      <h2>What Came After Doug Left</h2>
+      <p style="max-width: 650px; margin: 0 auto 1.5rem;">
+        The seeds planted during Doug's years bore fruit. Eddie Sutton arrived in 1990 and transformed
+        everything. Two Final Fours. 13 NCAA Tournament appearances. 368 wins. The court named in his honor.
+        The full story of Iba and Sutton &mdash; the two coaches Doug mentioned by name &mdash; is waiting
+        for you.
+      </p>
+      <div class="cta-row" style="justify-content: center; gap: 1rem; display: flex; flex-wrap: wrap;">
+        <a href="hank-iba.html" class="cta-btn" style="background: #fff; color: var(--osu-orange-dark); font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.85rem 2rem; border-radius: var(--radius-sm);">Read About Hank Iba</a>
+        <a href="eddie-sutton.html" class="cta-btn" style="background: var(--osu-black); color: #fff; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.85rem 2rem; border-radius: var(--radius-sm);">Read About Eddie Sutton</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>
+      Built with <span class="footer-heart">&hearts;</span> for <strong>Doug Coleman</strong>
+      &mdash; Proud Oklahoma State Cowboy, Class of 1988
+    </p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem;">
+      Go Pokes. &bull; America's Brightest Orange &bull; Stillwater, Oklahoma
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

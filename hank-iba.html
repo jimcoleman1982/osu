@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Henry "Hank" Iba — Doug Coleman's OSU Time Capsule</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .bio-header {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+    }
+    .bio-avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--osu-orange), var(--osu-orange-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+      flex-shrink: 0;
+      color: #fff;
+      border: 4px solid var(--osu-black);
+    }
+    .bio-info h3 { margin-bottom: 0.25rem; }
+    .bio-info .bio-subtitle {
+      font-family: 'Oswald', sans-serif;
+      color: var(--osu-orange);
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .bio-info .bio-dates {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-top: 0.25rem;
+    }
+    @media (max-width: 600px) {
+      .bio-header { flex-direction: column; align-items: center; text-align: center; }
+    }
+    .olympic-card {
+      background: #fff;
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      border-left: 5px solid var(--osu-orange);
+      margin-bottom: 1.25rem;
+    }
+    .olympic-card h4 { margin-bottom: 0.25rem; }
+    .olympic-card .olympic-result {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .olympic-card .gold { color: #D4A017; }
+    .olympic-card .silver { color: #888; }
+    .coaching-tree {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .tree-node {
+      background: #222;
+      border-radius: var(--radius-sm);
+      padding: 1.25rem;
+      border-top: 3px solid var(--osu-orange);
+    }
+    .tree-node h4 { color: var(--osu-orange); font-size: 1rem; margin-bottom: 0.15rem; }
+    .tree-node .tree-relation {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.5);
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+    .tree-node p { color: rgba(255,255,255,0.75); font-size: 0.9rem; margin-bottom: 0; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Doug's OSU Time Capsule</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="basketball.html">Basketball</a></li>
+        <li><a href="hank-iba.html">Hank Iba</a></li>
+        <li><a href="eddie-sutton.html">Eddie Sutton</a></li>
+        <li><a href="football.html">Football</a></li>
+        <li><a href="stillwater.html">Stillwater</a></li>
+        <li><a href="world-events.html">World Events</a></li>
+        <li><a href="pop-culture.html">Pop Culture</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <p class="pre-title">The Legend</p>
+      <h1>Henry <span class="orange">"Hank" Iba</span></h1>
+      <p class="subtitle">The Iron Duke of Defense &mdash; 1904&ndash;1993</p>
+    </div>
+  </header>
+
+  <!-- ========== THE MAN ========== -->
+  <section class="section">
+    <div class="bio-header">
+      <div class="bio-avatar">&#127942;</div>
+      <div class="bio-info">
+        <h3>Henry Payne "Hank" Iba</h3>
+        <p class="bio-subtitle">The Iron Duke of Defense</p>
+        <p class="bio-dates">August 6, 1904 &mdash; January 15, 1993 &bull; Easton, Missouri</p>
+        <p>
+          For 36 years, Hank Iba prowled the sidelines at Oklahoma A&amp;M (later Oklahoma State),
+          building a basketball dynasty rooted in iron discipline and suffocating defense.
+          He won 751 games. He won two national championships. He coached three Olympic teams.
+          And when he died, they held his funeral in the arena that bears his name.
+        </p>
+      </div>
+    </div>
+
+    <div class="content-block">
+      <h3>The Path to Stillwater</h3>
+      <p>
+        Born in the small town of Easton, Missouri, Iba began coaching at Classen High School in
+        Oklahoma City before moving to the collegiate level. His career took him through
+        Northwest Missouri State (1929&ndash;1933) and the University of Colorado (1933&ndash;1934)
+        before he arrived at Oklahoma A&amp;M in <strong>1934</strong> &mdash; where he would stay
+        for the rest of his coaching career.
+      </p>
+      <p>
+        Beyond basketball, Iba served as athletic director from 1935 to 1970 and was even the school's
+        head baseball coach from 1934 to 1941, compiling a 90&ndash;41 record on the diamond.
+        But it was basketball where he made history.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== THE DYNASTY ========== -->
+  <div class="section-dark">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>The Dynasty</h2>
+        <p class="section-subtitle">Back-to-back national championships &mdash; the first team ever to do it</p>
+      </div>
+
+      <p style="color: rgba(255,255,255,0.8);">
+        In 1945 and 1946, Iba's Oklahoma A&amp;M Aggies became the <strong>first team in NCAA history
+        to win consecutive national championships</strong>. The weapon: 7-foot center
+        <strong>Bob Kurland</strong> &mdash; the game's first dominant big man and the first
+        two-time Most Outstanding Player in NCAA Tournament history.
+      </p>
+
+      <div class="stats-row mt-3">
+        <div class="stat-item">
+          <div class="stat-number">2</div>
+          <div class="stat-label">NCAA Championships</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1945</div>
+          <div class="stat-label">First Title (vs. NYU)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1946</div>
+          <div class="stat-label">Second Title (vs. UNC)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">7'0"</div>
+          <div class="stat-label">Bob Kurland</div>
+        </div>
+      </div>
+
+      <div class="content-block mt-3">
+        <p style="color: rgba(255,255,255,0.8);">
+          After the 1945 championship, the Aggies faced DePaul and their star George Mikan in the
+          Red Cross Benefit Game &mdash; a matchup billed as the clash of the game's two dominant
+          big men. Kurland and Iba's squad won, cementing their place as the best team in the country.
+        </p>
+        <p style="color: rgba(255,255,255,0.8);">
+          The 1946 title defense was emphatic. Iba's teams weren't flashy &mdash; they were methodical,
+          disciplined, and utterly suffocating on defense. That formula worked better than anyone else's.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== THE DEFENSE ========== -->
+  <section class="section">
+    <div class="section-header">
+      <h2>The Defense</h2>
+      <p class="section-subtitle">Why they called him the Iron Duke</p>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <p>
+          Iba's defining innovation was the <strong>"swinging gate" defense</strong> &mdash; a man-to-man
+          system with team flow that emphasized physical play and teammates helping each other. It wasn't
+          just about guarding your man. It was about denying passes, disrupting rhythm, and making every
+          possession a battle.
+        </p>
+        <p>
+          The results speak for themselves: Iba's teams led the nation in scoring defense
+          <strong>16 times during his first 23 seasons</strong> at Stillwater. Sixteen times. That's not
+          a streak &mdash; that's a way of life.
+        </p>
+        <p>
+          On offense, Iba ran a motion system built around a passing game with approximately 50 plays.
+          If the pattern was executed correctly, someone was guaranteed an open shot. In close games,
+          he deployed the famous <strong>"Iba deep freeze"</strong> &mdash; a ball-control strategy
+          that prioritized possession over points.
+        </p>
+      </div>
+      <div>
+        <blockquote>
+          "I'm not against taking shots, but I am against taking bad shots."
+          <cite>&mdash; Hank Iba</cite>
+        </blockquote>
+
+        <div class="arena-box" style="background: linear-gradient(135deg, #1a1008, var(--osu-black)); border-radius: var(--radius-md); padding: 1.5rem; color: var(--text-light); border: 1px solid #333; margin-top: 1.5rem;">
+          <h4 style="color: var(--osu-orange);">By The Numbers</h4>
+          <p><strong>Career record:</strong> 751&ndash;340</p>
+          <p><strong>Seasons at OSU:</strong> 36 (1934&ndash;1970)</p>
+          <p><strong>#1 in scoring defense:</strong> 16 times in 23 years</p>
+          <p><strong>NCAA Championships:</strong> 2 (1945, 1946)</p>
+          <p><strong>Olympic teams coached:</strong> 3</p>
+          <p class="mb-0"><strong>National Coach of the Year:</strong> 1945, 1946</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== OLYMPIC GLORY & HEARTBREAK ========== -->
+  <div class="section-dark">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>Olympic Glory &amp; Heartbreak</h2>
+        <p class="section-subtitle">Three Olympic Games &mdash; two golds, one controversy that still stings</p>
+      </div>
+
+      <div class="olympic-card">
+        <h4>1964 Tokyo Olympics</h4>
+        <p class="olympic-result gold">&#127941; Gold Medal</p>
+        <p>
+          Iba became the first coach in U.S. Olympic basketball history to lead a gold medal-winning team.
+          The Americans dominated the tournament, and Iba's defensive system translated perfectly
+          to the international game.
+        </p>
+      </div>
+
+      <div class="olympic-card">
+        <h4>1968 Mexico City Olympics</h4>
+        <p class="olympic-result gold">&#127941; Gold Medal</p>
+        <p>
+          A second consecutive Olympic gold for Iba. Two trips to the Olympics, two gold medals.
+          The U.S. winning streak in Olympic basketball continued to grow.
+        </p>
+      </div>
+
+      <div class="olympic-card" style="border-left-color: #888; background: #FFF8F0;">
+        <h4>1972 Munich Olympics</h4>
+        <p class="olympic-result silver">&#129352; Silver Medal &mdash; The Controversy</p>
+        <p>
+          The most controversial finish in Olympic basketball history. In the gold medal game against
+          the Soviet Union, the United States appeared to have won by one point. Then a courtside
+          Olympic official <strong>twice ordered three seconds put back on the clock</strong>.
+        </p>
+        <p>
+          During the <strong>third playing</strong> of the final seconds, the Soviets made a disputed basket
+          and won 51&ndash;50 &mdash; breaking Team USA's <strong>63-game Olympic winning streak</strong>.
+        </p>
+        <p>
+          With Iba's approval, the U.S. team <strong>boycotted the medal ceremony</strong>.
+          The silver medals from that game <strong>remain unclaimed to this day</strong>, stored in the
+          Olympic Museum in Lausanne, Switzerland. No American player from that team has ever accepted
+          their medal.
+        </p>
+        <p style="margin-bottom: 0; font-weight: 600; color: var(--osu-orange-dark);">
+          It has been over 50 years. The medals are still unclaimed.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== THE COACHING TREE ========== -->
+  <div class="section-dark" style="background: #111;">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>The Coaching Tree</h2>
+        <p class="section-subtitle">Iba's influence spread across generations of basketball</p>
+      </div>
+
+      <p style="color: rgba(255,255,255,0.7); margin-bottom: 1.5rem;">
+        The measure of a great coach isn't just his own record &mdash; it's what his students accomplish.
+        Iba's coaching tree produced some of the most successful coaches in basketball history.
+      </p>
+
+      <div class="coaching-tree">
+        <div class="tree-node">
+          <h4>Eddie Sutton</h4>
+          <div class="tree-relation">Played for Iba 1955&ndash;1958</div>
+          <p>
+            806 career wins. Hall of Fame. Returned to OSU and led the Cowboys to two Final Fours.
+            Called Iba his "second father."
+            <a href="eddie-sutton.html" style="color: var(--osu-orange);">Read his full story &rarr;</a>
+          </p>
+        </div>
+        <div class="tree-node">
+          <h4>Don Haskins</h4>
+          <div class="tree-relation">Played for Iba 1949&ndash;1952</div>
+          <p>
+            Coached UTEP to the 1966 NCAA championship with an all-Black starting lineup &mdash;
+            one of the most significant games in sports history. Later served as Iba's assistant
+            at the 1972 Olympics.
+          </p>
+        </div>
+        <div class="tree-node">
+          <h4>Jack Hartman</h4>
+          <div class="tree-relation">Coached under Iba's influence</div>
+          <p>
+            Built Kansas State into a consistent winner, taking the Wildcats to the Elite Eight
+            multiple times. Known for his disciplined, defensive-minded teams.
+          </p>
+        </div>
+        <div class="tree-node">
+          <h4>Bobby Knight</h4>
+          <div class="tree-relation">Philosophical disciple</div>
+          <p>
+            Deeply influenced by Iba's defensive philosophy. When Iba died, Knight said:
+            "Of all the shadows that cast over the game of basketball, his was the biggest."
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HIS LEGACY ========== -->
+  <section class="section">
+    <div class="section-header">
+      <h2>His Legacy</h2>
+      <p class="section-subtitle">What Hank Iba left behind</p>
+    </div>
+
+    <div class="content-block">
+      <h3>The Honors</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li style="padding: 0.4rem 0; border-bottom: 1px solid var(--border-light);">&#127942; <strong>Naismith Memorial Basketball Hall of Fame</strong> (1969)</li>
+        <li style="padding: 0.4rem 0; border-bottom: 1px solid var(--border-light);">&#127941; <strong>Olympic Hall of Fame</strong></li>
+        <li style="padding: 0.4rem 0; border-bottom: 1px solid var(--border-light);">&#127942; <strong>Oklahoma Sports Hall of Fame</strong></li>
+        <li style="padding: 0.4rem 0; border-bottom: 1px solid var(--border-light);">&#127942; <strong>Oklahoma Hall of Fame</strong></li>
+        <li style="padding: 0.4rem 0; border-bottom: 1px solid var(--border-light);">&#127942; <strong>Missouri Hall of Fame</strong></li>
+        <li style="padding: 0.4rem 0; border-bottom: 1px solid var(--border-light);">&#127891; <strong>Henry Iba Award</strong> &mdash; USBWA Coach of the Year, given annually in his name</li>
+        <li style="padding: 0.4rem 0;">&#127891; <strong>Henry P. Iba Citizen Athlete of the Year Award</strong> &mdash; established 1994 by the Rotary Club of Tulsa</li>
+      </ul>
+    </div>
+
+    <div class="content-block">
+      <h3>The Arena</h3>
+      <p>
+        In <strong>1987</strong> &mdash; while Doug Coleman was a graduate student at Oklahoma State &mdash;
+        the arena was officially renamed <strong>Gallagher-Iba Arena</strong> in Hank Iba's honor.
+        The building he coached in for 36 years now carries his name forever.
+      </p>
+      <p>
+        On January 15, 2005, the court itself was named <strong>Eddie Sutton Court</strong> &mdash;
+        honoring the student who became the coach who carried Iba's legacy forward.
+      </p>
+    </div>
+
+    <div class="content-block">
+      <h3>The End</h3>
+      <p>
+        Henry "Hank" Iba died of heart failure on <strong>January 15, 1993</strong>, at age 88,
+        at a Stillwater hospital. Funeral services were held at Gallagher-Iba Arena &mdash;
+        the basketball cathedral that bore his name.
+      </p>
+      <p>
+        He was buried at Fairlawn Cemetery in Stillwater, Payne County, Oklahoma &mdash;
+        the town where he had spent nearly six decades of his life.
+      </p>
+
+      <blockquote>
+        "Of all the shadows that cast over the game of basketball, his was the biggest."
+        <cite>&mdash; Bob Knight</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ========== CONTINUE ========== -->
+  <div class="section-orange">
+    <div class="section-inner text-center">
+      <h2>The Story Continues</h2>
+      <p style="max-width: 600px; margin: 0 auto 1.5rem;">
+        Iba's greatest student was Eddie Sutton &mdash; the player who became the coach who came home.
+      </p>
+      <a href="eddie-sutton.html" class="cta-btn" style="background: #fff; color: var(--osu-orange-dark); font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.85rem 2rem; border-radius: var(--radius-sm);">Read About Eddie Sutton &rarr;</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>
+      Built with <span class="footer-heart">&hearts;</span> for <strong>Doug Coleman</strong>
+      &mdash; Proud Oklahoma State Cowboy, Class of 1988
+    </p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem;">
+      Go Pokes. &bull; America's Brightest Orange &bull; Stillwater, Oklahoma
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

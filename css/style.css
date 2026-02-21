@@ -1,0 +1,677 @@
+/* ========================================
+   Doug Coleman's OSU Time Capsule
+   Shared Styles — OSU Orange & Black
+   with 1980s retro touches
+   ======================================== */
+
+/* ---------- Fonts ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Press+Start+2P&display=swap');
+
+/* ---------- Variables ---------- */
+:root {
+  --osu-orange: #FE5C00;
+  --osu-orange-dark: #D94E00;
+  --osu-orange-light: #FF8C42;
+  --osu-black: #1A1A1A;
+  --osu-black-pure: #000000;
+  --cream: #FFF8F0;
+  --cream-dark: #F5EDE3;
+  --text-primary: #1A1A1A;
+  --text-secondary: #4A4A4A;
+  --text-light: #F5F5F5;
+  --border-light: #E0D5C8;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.12);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.16);
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --max-width: 1100px;
+  --transition: 0.3s ease;
+}
+
+/* ---------- Reset ---------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text-primary);
+  background: var(--cream);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a { color: var(--osu-orange-dark); text-decoration: none; transition: color var(--transition); }
+a:hover { color: var(--osu-orange); }
+
+/* ---------- Typography ---------- */
+h1, h2, h3, h4, h5 {
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--osu-black);
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; text-transform: uppercase; }
+h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 600; text-transform: uppercase; }
+h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: 600; }
+h4 { font-size: 1.15rem; font-weight: 600; }
+
+p { margin-bottom: 1rem; }
+
+.accent-font {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ---------- Navigation ---------- */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--osu-black-pure);
+  border-bottom: 3px solid var(--osu-orange);
+  padding: 0 1.5rem;
+}
+
+.nav-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 56px;
+}
+
+.nav-brand {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--osu-orange);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.25rem;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-links a {
+  color: var(--text-light);
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.5rem 0.65rem;
+  border-radius: var(--radius-sm);
+  transition: background var(--transition), color var(--transition);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: var(--osu-orange);
+  color: #fff;
+}
+
+/* Mobile hamburger */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--osu-orange);
+  margin: 5px 0;
+  transition: var(--transition);
+}
+
+@media (max-width: 820px) {
+  .nav-toggle { display: block; }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--osu-black-pure);
+    padding: 1rem;
+    border-bottom: 3px solid var(--osu-orange);
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 0.75rem 1rem; font-size: 1rem; }
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(135deg, var(--osu-black-pure) 0%, #1a1008 50%, var(--osu-black-pure) 100%);
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1.5rem 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(254, 92, 0, 0.03) 2px,
+      rgba(254, 92, 0, 0.03) 4px
+    );
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.hero .pre-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: clamp(0.55rem, 1.5vw, 0.75rem);
+  color: var(--osu-orange);
+  letter-spacing: 0.15em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  margin-bottom: 0.5rem;
+}
+
+.hero h1 .orange { color: var(--osu-orange); }
+
+.hero .subtitle {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.35rem);
+  color: rgba(255,255,255,0.75);
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 0.75rem;
+}
+
+.hero .years {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--osu-orange);
+  letter-spacing: 0.1em;
+  margin-top: 0.5rem;
+}
+
+/* ---------- Section containers ---------- */
+.section {
+  padding: 3.5rem 1.5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.section-dark {
+  background: var(--osu-black);
+  color: var(--text-light);
+  padding: 3.5rem 1.5rem;
+}
+
+.section-dark .section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.section-dark h2,
+.section-dark h3 {
+  color: var(--osu-orange);
+}
+
+.section-orange {
+  background: var(--osu-orange);
+  color: #fff;
+  padding: 3.5rem 1.5rem;
+}
+
+.section-orange .section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.section-orange h2,
+.section-orange h3 {
+  color: #fff;
+}
+
+/* Section headers with orange accent bar */
+.section-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--osu-orange);
+}
+
+.section-header h2 {
+  margin-bottom: 0.25rem;
+}
+
+.section-header .section-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+.section-dark .section-header {
+  border-bottom-color: var(--osu-orange);
+}
+
+.section-dark .section-header .section-subtitle {
+  color: rgba(255,255,255,0.6);
+}
+
+/* ---------- Cards ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--osu-black);
+}
+
+.card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+.card .card-cta {
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: var(--osu-orange);
+  letter-spacing: 0.05em;
+}
+
+.card .card-cta::after {
+  content: ' \2192';
+}
+
+/* Dark card variant */
+.card-dark {
+  background: #222;
+  border-color: #333;
+}
+
+.card-dark h3 { color: var(--osu-orange); }
+.card-dark p { color: rgba(255,255,255,0.7); }
+
+/* ---------- Content blocks ---------- */
+.content-block {
+  margin-bottom: 2.5rem;
+}
+
+.content-block h3 {
+  margin-bottom: 0.75rem;
+  color: var(--osu-orange-dark);
+}
+
+.content-block h4 {
+  margin-bottom: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+blockquote {
+  border-left: 4px solid var(--osu-orange);
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  background: rgba(254, 92, 0, 0.05);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.section-dark blockquote {
+  background: rgba(254, 92, 0, 0.1);
+  color: rgba(255,255,255,0.8);
+}
+
+.section-dark blockquote cite {
+  color: var(--osu-orange);
+}
+
+/* ---------- Stats row ---------- */
+.stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+  min-width: 120px;
+}
+
+.stat-number {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--osu-orange);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.25rem;
+}
+
+.section-dark .stat-label {
+  color: rgba(255,255,255,0.6);
+}
+
+/* ---------- Season table ---------- */
+.season-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.season-table th {
+  background: var(--osu-black);
+  color: var(--osu-orange);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.season-table td {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.season-table tr:nth-child(even) {
+  background: rgba(254, 92, 0, 0.04);
+}
+
+.season-table .highlight-row {
+  background: rgba(254, 92, 0, 0.12);
+  font-weight: 600;
+}
+
+/* ---------- Timeline ---------- */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin: 2rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--osu-orange);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2.35rem;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  background: var(--osu-orange);
+  border-radius: 50%;
+  border: 3px solid var(--cream);
+}
+
+.section-dark .timeline-item::before {
+  border-color: var(--osu-black);
+}
+
+.timeline-year {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--osu-orange);
+  margin-bottom: 0.25rem;
+}
+
+.timeline-label {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.6rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.section-dark .timeline-label {
+  color: rgba(255,255,255,0.5);
+}
+
+/* ---------- YouTube embed ---------- */
+.video-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  margin: 1.5rem 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-caption {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.section-dark .video-caption {
+  color: rgba(255,255,255,0.5);
+}
+
+/* Video links list */
+.video-links {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.video-links li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.video-links li::before {
+  content: '\25B6 ';
+  color: var(--osu-orange);
+  font-size: 0.75rem;
+}
+
+.section-dark .video-links li {
+  border-bottom-color: #333;
+}
+
+/* ---------- Two-column layout ---------- */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 700px) {
+  .two-col { grid-template-columns: 1fr; }
+}
+
+/* ---------- Callout box ---------- */
+.callout {
+  background: linear-gradient(135deg, var(--osu-orange), var(--osu-orange-dark));
+  color: #fff;
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  margin: 2rem 0;
+}
+
+.callout h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.callout a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--osu-black-pure);
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+  padding: 2rem 1.5rem;
+  font-size: 0.85rem;
+  border-top: 3px solid var(--osu-orange);
+}
+
+.site-footer .footer-heart {
+  color: var(--osu-orange);
+}
+
+.site-footer a {
+  color: var(--osu-orange);
+}
+
+/* ---------- Retro scan-line overlay (opt-in) ---------- */
+.retro-lines::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,0.03) 2px,
+    rgba(0,0,0,0.03) 4px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ---------- Utility ---------- */
+.text-center { text-align: center; }
+.text-orange { color: var(--osu-orange); }
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+
+/* ---------- Responsive fine-tuning ---------- */
+@media (max-width: 600px) {
+  .hero { padding: 3rem 1rem 2.5rem; }
+  .section { padding: 2.5rem 1rem; }
+  .section-dark, .section-orange { padding: 2.5rem 1rem; }
+  .card-grid { grid-template-columns: 1fr; }
+  .stats-row { gap: 1rem; }
+  .stat-number { font-size: 2rem; }
+}

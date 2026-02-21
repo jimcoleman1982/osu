@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pop Culture — Doug Coleman's OSU Time Capsule</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .culture-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .culture-item {
+      background: #fff;
+      border-radius: var(--radius-sm);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-sm);
+      border-top: 3px solid var(--osu-orange);
+    }
+    .culture-item h4 { font-size: 1rem; margin-bottom: 0.15rem; }
+    .culture-item .culture-year {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.8rem;
+      color: var(--osu-orange);
+      letter-spacing: 0.04em;
+      margin-bottom: 0.5rem;
+    }
+    .culture-item p { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0; }
+    .fashion-item {
+      background: #222;
+      border-radius: var(--radius-sm);
+      padding: 1.25rem;
+      text-align: center;
+    }
+    .fashion-item .fashion-icon { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .fashion-item h4 { color: var(--osu-orange); font-size: 0.95rem; margin-bottom: 0.35rem; }
+    .fashion-item p { color: rgba(255,255,255,0.7); font-size: 0.85rem; margin-bottom: 0; }
+    .tech-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .tech-item:last-child { border-bottom: none; }
+    .tech-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+      width: 50px;
+      text-align: center;
+    }
+    .movie-year-group { margin-bottom: 2rem; }
+    .movie-year-group h4 {
+      font-family: 'Oswald', sans-serif;
+      color: var(--osu-orange);
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--osu-orange);
+    }
+    .movie-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .movie-tag {
+      background: rgba(254,92,0,0.08);
+      border: 1px solid rgba(254,92,0,0.2);
+      border-radius: 20px;
+      padding: 0.35rem 0.85rem;
+      font-size: 0.85rem;
+      color: var(--text-primary);
+      white-space: nowrap;
+    }
+    .movie-tag.highlight {
+      background: var(--osu-orange);
+      color: #fff;
+      border-color: var(--osu-orange);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Doug's OSU Time Capsule</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="basketball.html">Basketball</a></li>
+        <li><a href="hank-iba.html">Hank Iba</a></li>
+        <li><a href="eddie-sutton.html">Eddie Sutton</a></li>
+        <li><a href="football.html">Football</a></li>
+        <li><a href="stillwater.html">Stillwater</a></li>
+        <li><a href="world-events.html">World Events</a></li>
+        <li><a href="pop-culture.html">Pop Culture</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <p class="pre-title">The Soundtrack of Your College Years</p>
+      <h1>Pop <span class="orange">Culture</span></h1>
+      <p class="subtitle">The music, movies, TV, fashion, and tech that defined the 1980s</p>
+    </div>
+  </header>
+
+  <!-- ========== MUSIC & MTV ========== -->
+  <section class="section">
+    <div class="section-header">
+      <h2>Music &amp; MTV</h2>
+      <p class="section-subtitle">The MTV revolution changed everything &mdash; and you lived through it</p>
+    </div>
+
+    <p>
+      MTV launched on August 1, 1981 &mdash; one year before Doug arrived at OSU. By 1982, it had
+      completely transformed how people consumed music. Music videos weren't just promotional tools anymore;
+      they were the art form. And the artists who mastered the medium became the biggest stars on the planet.
+    </p>
+
+    <div class="culture-grid">
+      <div class="culture-item">
+        <h4>Michael Jackson</h4>
+        <div class="culture-year">Thriller &bull; 1982</div>
+        <p>The biggest-selling artist of the decade. Nine #1 singles. Thriller sold 25 million copies in the '80s alone. The moonwalk. The red jacket. He broke MTV's color barrier.</p>
+      </div>
+      <div class="culture-item">
+        <h4>Prince</h4>
+        <div class="culture-year">Purple Rain &bull; 1984</div>
+        <p>Along with Jackson, Prince was among the first Black artists in heavy MTV rotation. Purple Rain was both the album and the movie. Genius on every instrument.</p>
+      </div>
+      <div class="culture-item">
+        <h4>The Police</h4>
+        <div class="culture-year">"Every Breath You Take" &bull; 1983</div>
+        <p>The summer of 1983 belonged to The Police. That song made them the biggest band in the world. Then they broke up.</p>
+      </div>
+      <div class="culture-item">
+        <h4>Bon Jovi</h4>
+        <div class="culture-year">Slippery When Wet &bull; 1986</div>
+        <p>20+ million copies sold. "Livin' on a Prayer" and "You Give Love a Bad Name." Then New Jersey (1988) sold another 10 million. Arena rock at its peak.</p>
+      </div>
+      <div class="culture-item">
+        <h4>Whitney Houston</h4>
+        <div class="culture-year">Seven Consecutive #1 Hits &bull; 1985&ndash;1988</div>
+        <p>The only artist ever to score seven consecutive #1 songs, from "Saving All My Love for You" to "Where Do Broken Hearts Go."</p>
+      </div>
+      <div class="culture-item">
+        <h4>The British Invasion II</h4>
+        <div class="culture-year">1982&ndash;1984</div>
+        <p>Duran Duran, A Flock of Seagulls, Culture Club, Human League. MTV made them superstars overnight. Synth-pop took over American radio.</p>
+      </div>
+    </div>
+
+    <div class="callout mt-3">
+      <h3>The Walkman &amp; the Mixtape</h3>
+      <p>
+        The Sony Walkman (introduced 1979) and the cassette tape were your personal music delivery system.
+        You clipped the Walkman to your belt, popped in a cassette, and created your own private world
+        with foam headphones. And the mixtape? That was how you shared music &mdash; and maybe told someone
+        how you felt about them.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== MOVIES ========== -->
+  <div class="section-dark">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>Movies by Year</h2>
+        <p class="section-subtitle">The films you saw in theaters during your years at OSU</p>
+      </div>
+
+      <div class="movie-year-group">
+        <h4>1982 &mdash; Doug's Freshman Year</h4>
+        <div class="movie-list">
+          <span class="movie-tag highlight">E.T.</span>
+          <span class="movie-tag">Blade Runner</span>
+          <span class="movie-tag">Star Trek II: Wrath of Khan</span>
+          <span class="movie-tag">An Officer and a Gentleman</span>
+          <span class="movie-tag">Tron</span>
+          <span class="movie-tag">Fast Times at Ridgemont High</span>
+          <span class="movie-tag">Rocky III</span>
+        </div>
+      </div>
+
+      <div class="movie-year-group">
+        <h4>1983</h4>
+        <div class="movie-list">
+          <span class="movie-tag highlight">Return of the Jedi</span>
+          <span class="movie-tag">Scarface</span>
+          <span class="movie-tag">WarGames</span>
+          <span class="movie-tag">Risky Business</span>
+          <span class="movie-tag">The Right Stuff</span>
+          <span class="movie-tag">A Christmas Story</span>
+        </div>
+      </div>
+
+      <div class="movie-year-group">
+        <h4>1984</h4>
+        <div class="movie-list">
+          <span class="movie-tag highlight">Ghostbusters</span>
+          <span class="movie-tag highlight">The Karate Kid</span>
+          <span class="movie-tag">The Terminator</span>
+          <span class="movie-tag">Beverly Hills Cop</span>
+          <span class="movie-tag">Footloose</span>
+          <span class="movie-tag">Revenge of the Nerds</span>
+          <span class="movie-tag">Gremlins</span>
+          <span class="movie-tag">Splash</span>
+        </div>
+      </div>
+
+      <div class="movie-year-group">
+        <h4>1985</h4>
+        <div class="movie-list">
+          <span class="movie-tag highlight">Back to the Future</span>
+          <span class="movie-tag highlight">The Breakfast Club</span>
+          <span class="movie-tag">The Goonies</span>
+          <span class="movie-tag">Rambo: First Blood Part II</span>
+          <span class="movie-tag">Real Genius</span>
+          <span class="movie-tag">Rocky IV</span>
+          <span class="movie-tag">The Color Purple</span>
+        </div>
+      </div>
+
+      <div class="movie-year-group">
+        <h4>1986</h4>
+        <div class="movie-list">
+          <span class="movie-tag highlight">Top Gun</span>
+          <span class="movie-tag highlight">Ferris Bueller's Day Off</span>
+          <span class="movie-tag">Platoon</span>
+          <span class="movie-tag">Aliens</span>
+          <span class="movie-tag">Stand By Me</span>
+          <span class="movie-tag">The Fly</span>
+          <span class="movie-tag">Crocodile Dundee</span>
+        </div>
+      </div>
+
+      <div class="movie-year-group">
+        <h4>1987</h4>
+        <div class="movie-list">
+          <span class="movie-tag highlight">Wall Street</span>
+          <span class="movie-tag">The Princess Bride</span>
+          <span class="movie-tag">Predator</span>
+          <span class="movie-tag">RoboCop</span>
+          <span class="movie-tag">Full Metal Jacket</span>
+          <span class="movie-tag">Dirty Dancing</span>
+          <span class="movie-tag">Lethal Weapon</span>
+        </div>
+      </div>
+
+      <div class="movie-year-group" style="margin-bottom: 0;">
+        <h4>1988 &mdash; Doug's Graduation Year</h4>
+        <div class="movie-list">
+          <span class="movie-tag highlight">Die Hard</span>
+          <span class="movie-tag highlight">Rain Man</span>
+          <span class="movie-tag">Who Framed Roger Rabbit</span>
+          <span class="movie-tag">Beetlejuice</span>
+          <span class="movie-tag">Coming to America</span>
+          <span class="movie-tag">Big</span>
+          <span class="movie-tag">Bull Durham</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== TELEVISION ========== -->
+  <section class="section">
+    <div class="section-header">
+      <h2>Television</h2>
+      <p class="section-subtitle">What was on the TV in your dorm room</p>
+    </div>
+
+    <div class="culture-grid">
+      <div class="culture-item">
+        <h4>Cheers</h4>
+        <div class="culture-year">Premiered 1982 &mdash; Doug's freshman year</div>
+        <p>Nearly canceled in its first season. Went on to spend eight of eleven seasons in the Nielsen Top 10. The finale drew 93 million viewers. "Where everybody knows your name."</p>
+      </div>
+      <div class="culture-item">
+        <h4>Family Ties</h4>
+        <div class="culture-year">1982&ndash;1989</div>
+        <p>Michael J. Fox as Alex P. Keaton &mdash; the young Republican in a liberal household. Fox won three Emmy Awards and became one of the biggest stars of the decade.</p>
+      </div>
+      <div class="culture-item">
+        <h4>The Cosby Show</h4>
+        <div class="culture-year">1984&ndash;1992</div>
+        <p>Dominated the ratings for most of the decade. The Huxtable family became the most-watched family in America. Changed the landscape of network television.</p>
+      </div>
+      <div class="culture-item">
+        <h4>Knight Rider</h4>
+        <div class="culture-year">1982&ndash;1986</div>
+        <p>David Hasselhoff and KITT &mdash; the talking, thinking car. The ultimate '80s action show. You wanted that car.</p>
+      </div>
+      <div class="culture-item">
+        <h4>A Different World</h4>
+        <div class="culture-year">1987&ndash;1993</div>
+        <p>Cosby Show spinoff set at fictional Hillman College. As a college student watching a show about college students &mdash; it hit different.</p>
+      </div>
+      <div class="culture-item">
+        <h4>Murder, She Wrote</h4>
+        <div class="culture-year">1984&ndash;1996</div>
+        <p>Angela Lansbury as Jessica Fletcher. Twelve seasons. Sunday nights. One of the most successful shows of the era.</p>
+      </div>
+    </div>
+
+    <div class="content-block mt-3">
+      <h3>MTV Spring Break</h3>
+      <p>
+        Starting in <strong>1986</strong>, MTV began annual Spring Break coverage, broadcasting live from
+        Daytona Beach eight hours per day for a week in March. Performers like Mr. Mister and the Beastie
+        Boys played on the beach. It brought spring break culture into millions of living rooms and
+        defined what college spring break was supposed to look like.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== FASHION ========== -->
+  <div class="section-dark">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>Fashion</h2>
+        <p class="section-subtitle">What people wore on campus in the 1980s</p>
+      </div>
+
+      <div class="culture-grid">
+        <div class="fashion-item">
+          <div class="fashion-icon">&#129509;</div>
+          <h4>Members Only Jackets</h4>
+          <p>If you didn't have one, you were a dork. Burgundy was the most popular color, followed by camel brown, grey, and black. The ribbed collar and cuffs were unmistakable.</p>
+        </div>
+        <div class="fashion-item">
+          <div class="fashion-icon">&#128084;</div>
+          <h4>Preppy Style</h4>
+          <p>The Official Preppy Handbook (1980) launched a movement: polo shirts, khakis, boat shoes, cable-knit sweaters. Ralph Lauren, Brooks Brothers, Lacoste.</p>
+        </div>
+        <div class="fashion-item">
+          <div class="fashion-icon">&#128086;</div>
+          <h4>Parachute Pants</h4>
+          <p>Slim-cut nylon pants with lots of zippers. Started with breakdancers, went mainstream. Ripstop nylon in every color imaginable.</p>
+        </div>
+        <div class="fashion-item">
+          <div class="fashion-icon">&#128135;</div>
+          <h4>Big Hair</h4>
+          <p>A defining characteristic of the decade. Extra-hold aerosol hairspray. Side ponies. Feathered bangs. The higher the hair, the closer to God.</p>
+        </div>
+        <div class="fashion-item">
+          <div class="fashion-icon">&#128088;</div>
+          <h4>Power Suits</h4>
+          <p>Shoulder pads and tailored fits. By 1982, power suits became symbols of strength as women made bold entrances into corporate America.</p>
+        </div>
+        <div class="fashion-item">
+          <div class="fashion-icon">&#129406;</div>
+          <h4>Leg Warmers</h4>
+          <p>Flashdance (1983) made them a fashion statement. Worn over jeans, with skirts, at the gym, everywhere. Velour, spandex, and neon colors everywhere.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== TECH IN THE DORMS ========== -->
+  <section class="section">
+    <div class="section-header">
+      <h2>Tech in the Dorms</h2>
+      <p class="section-subtitle">No internet. No cell phones. Here's what you actually had.</p>
+    </div>
+
+    <p>
+      When Doug arrived at OSU in 1982, the dorms were filled with the click-clack of typewriters at night.
+      By the time he graduated in 1988, that sound had mostly disappeared, replaced by the hum of early
+      personal computers running WordPerfect. But the fundamental experience was analog: no email,
+      no texting, no social media. If you wanted to talk to someone, you walked to their room or
+      called them on the phone.
+    </p>
+
+    <div class="tech-item">
+      <div class="tech-icon">&#9000;</div>
+      <div>
+        <h4>Typewriters to Computers</h4>
+        <p>Universities set up rooms with rudimentary computers for writing papers using WordPerfect. By 1988, the typewriter era was ending on college campuses. The Apple II, Commodore 64, and IBM PC were changing everything.</p>
+      </div>
+    </div>
+
+    <div class="tech-item">
+      <div class="tech-icon">&#127911;</div>
+      <div>
+        <h4>The Sony Walkman</h4>
+        <p>Your personal music bubble. Pop in a cassette, slip on foam headphones, clip it to your belt. Whether on the bus, at the park, or studying late at night &mdash; the Walkman was your constant companion.</p>
+      </div>
+    </div>
+
+    <div class="tech-item">
+      <div class="tech-icon">&#128252;</div>
+      <div>
+        <h4>Cassette Tapes &amp; Mixtapes</h4>
+        <p>Cassettes powered everything: boomboxes, car stereos, and the sacred art of the mixtape. Recording songs off the radio. Painstakingly labeling each tape. It was the playlist before playlists existed.</p>
+      </div>
+    </div>
+
+    <div class="tech-item">
+      <div class="tech-icon">&#128222;</div>
+      <div>
+        <h4>Answering Machines</h4>
+        <p>The social media of the '80s. You'd come back to your dorm room and check the blinking light. Missed calls, messages from friends, managing FOMO &mdash; all through a little box with a tape inside.</p>
+      </div>
+    </div>
+
+    <div class="tech-item">
+      <div class="tech-icon">&#128250;</div>
+      <div>
+        <h4>VHS &amp; VCRs</h4>
+        <p>The ability to record TV shows and rent movies was revolutionary. Blockbuster Video opened its first store in 1985. Friday nights meant a trip to the video store.</p>
+      </div>
+    </div>
+
+    <div class="tech-item">
+      <div class="tech-icon">&#128187;</div>
+      <div>
+        <h4>No Internet</h4>
+        <p>Let that sink in. No email. No Google. No Wikipedia. Research meant going to the library. If you wanted to know something, you looked it up in an encyclopedia or asked someone who knew. Doug wrote his business degree papers and his master's thesis without a single web search.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CLOSING ========== -->
+  <div class="section-orange">
+    <div class="section-inner text-center">
+      <h2>That Was Your Decade, Doug.</h2>
+      <p style="max-width: 650px; margin: 0 auto 1.5rem;">
+        From Michael Jackson to Members Only jackets, from E.T. to Die Hard, from typewriters to early PCs &mdash;
+        the 1980s were unlike anything before or since. You lived them in Stillwater, Oklahoma,
+        as a Cowboy. And now you can revisit them anytime.
+      </p>
+      <a href="index.html" class="cta-btn" style="background: #fff; color: var(--osu-orange-dark); font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.85rem 2rem; border-radius: var(--radius-sm);">Back to Home &rarr;</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>
+      Built with <span class="footer-heart">&hearts;</span> for <strong>Doug Coleman</strong>
+      &mdash; Proud Oklahoma State Cowboy, Class of 1988
+    </p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem;">
+      Go Pokes. &bull; America's Brightest Orange &bull; Stillwater, Oklahoma
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
